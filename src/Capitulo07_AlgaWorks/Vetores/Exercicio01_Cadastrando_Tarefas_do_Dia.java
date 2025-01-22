@@ -30,18 +30,7 @@ public class Exercicio01_Cadastrando_Tarefas_do_Dia {
 
             switch (opcaoDoMenu) {
                 case 1: // Adicionar tarefa
-                    for (int i = 0; i < tarefas.length; i++) {
-                        if (tarefas[i] == null) {
-                            System.out.print("Por favor informe a " + (i + 1) + "° tarefa: ");
-                            tarefas[i] = scanner.nextLine();
-                        }
-                    }
-                    System.out.println("Tarefas cadastradas: ");
-                    for (int i = 0; i < tarefas.length; i++) {
-                        if (tarefas[i] != null) {
-                            System.out.println((i + 1) + "°: " + tarefas[i]);
-                        }
-                    }
+                    adicionarTarefa(tarefas, scanner);
                     break;
 
                 case 2:
@@ -73,5 +62,20 @@ public class Exercicio01_Cadastrando_Tarefas_do_Dia {
         }
 
         scanner.close();
+    }
+
+    private static void adicionarTarefa(String[] tarefas, Scanner scanner) {
+        for (int i = 0; i < tarefas.length; i++) {
+            if (tarefas[i] == null) {
+                System.out.print("Por favor informe a " + (i + 1) + "° tarefa: ");
+                tarefas[i] = scanner.nextLine();
+            }
+        }
+        System.out.println("Tarefas cadastradas: ");
+        for (int i = 0; i < tarefas.length; i++) {
+            if (tarefas[i] != null) {
+                System.out.println((i + 1) + "°: " + tarefas[i]);
+            }
+        }
     }
 }

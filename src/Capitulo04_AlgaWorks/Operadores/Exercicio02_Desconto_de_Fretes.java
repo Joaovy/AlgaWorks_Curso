@@ -6,7 +6,7 @@ public class Exercicio02_Desconto_de_Fretes {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Integer valorFrete = 10;
-        Boolean continuarCompra = true;
+        boolean continuarCompra = true;
 
         while (continuarCompra) {
             System.out.print("Informe o valor do produto: ");

@@ -50,7 +50,10 @@ public class Exercicio01_Calculadora_simples {
             System.out.print("\nDeseja continuar? (s/n): ");
                  String respostaContinuar = scanner.next();
 
-                 if(!respostaContinuar.equalsIgnoreCase("s")){
+                if(! "S".equalsIgnoreCase(respostaContinuar)){
+
+                }
+                if(!respostaContinuar.equalsIgnoreCase("s")){
                      continuarPrograma = false;
                      System.out.println("Encerrando programa!");
                  }

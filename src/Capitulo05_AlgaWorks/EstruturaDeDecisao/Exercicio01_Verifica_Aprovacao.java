@@ -11,7 +11,7 @@ pela materia ou pelo total da sua nota, também apliquei uma logica diferente em
 
  */
         Scanner scanner = new Scanner(System.in);
-        Integer notaPortugues = 0;
+        int notaPortugues = 0;
         Integer notaMatematica = 0;
 
         System.out.print("Qual a sua nota em português? ( max 100 ): ");
