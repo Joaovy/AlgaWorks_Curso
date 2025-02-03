@@ -1,6 +1,4 @@
-package joaorodrigues.cursos.algaworksjava;
-
-import org.w3c.dom.ls.LSOutput;
+package Capitulo09_AlgaWorks.OrientacaoAObjetos.Exercicio02MetodoInstancia.algaworksjava;
 
 public class TextMenu {
 
